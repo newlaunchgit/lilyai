@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LilyAI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Full page black background */
+            color: white; /* Text color for better visibility on dark background */
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        #home video {
+            width: 100%;
+            height: auto;
+        }
+        #about {
+            background-color: #ffdae0; /* Light pink background for a girly look */
+            font-family: 'Great Vibes', cursive; /* Fancy font, make sure to include this font in your CSS */
+            color: #333; /* Darker text for contrast on the light pink background */
+        }
+        #gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+            #home video {
+                height: 300px;
+            }
+        }
+        /* Add this to include an external font */
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    </style>
+</head>
+<body>
+    <section id="home">
+        <video autoplay loop muted playsinline>
+            <source src="/Lucy night dance 3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section id="about">
+        <h2 style="font-size: 3em;">About LilyAI</h2>
+        <p style="font-size: 1.5em;">LilyAI envisions a bridge between digital and anime realms, serving as a companion, curator, and creator that transforms the consumption and production of anime.</p>
+    </section>
+    <section id="gallery">
+        <img src="/lilly-removebg-preview (1).png" alt="Gallery Image">
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('LilyAI website loaded!');
+            // Here you can add any dynamic behavior or interactions if needed.
+        });
+    </script>
+</body>
+</html>
